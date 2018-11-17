@@ -1,0 +1,7 @@
+__pycache__
+env
+.vscode
+ecobee.bak
+ecobee.dat
+ecobee.dir
+ecobee.token.*
