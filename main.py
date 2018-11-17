@@ -9,8 +9,8 @@ else:
   token = ecobee.initialAuth() # Get the token
   ecobee.storeToken(token) # Store the token
   
-thermostatOutput = ecobee.thermostatRequest() # Make the API call
-temps = ecobee.parseTemperatures(thermostatOutput)
+thermostat_output = ecobee.thermostatRequest() # Make the API call
+temps = ecobee.parseTemperatures(thermostat_output)
 firebase.storeTemperatures(temps)
 all_temperatures = firebase.getRoomTemperatures('Bedroom', 15)
 for temp_value in all_temperatures:
